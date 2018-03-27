@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EmployeeEntryDetailsActivity">
+
+    <item
+        android:id="@+id/backButton"
+        android:icon="@drawable/back_button"
+        android:title="Compose"
+        app:showAsAction="ifRoom"></item>
+</menu>

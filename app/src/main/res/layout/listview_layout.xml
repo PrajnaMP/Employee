@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_dp"
+        android:weightSum="1.0">
+
+        <TextView
+            android:id="@+id/first_name_text_view"
+            android:layout_width="@dimen/name_width"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:text="@string/firstname"
+            android:textSize="@dimen/fifteen_dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/last_name_text_view"
+            android:layout_width="@dimen/name_width"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:paddingLeft="@dimen/padding_left"
+            android:text="@string/lastname"
+            android:textSize="@dimen/fifteen_dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/department_text_view"
+            android:layout_width="@dimen/department_width"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:paddingLeft="@dimen/padding_left"
+            android:text="@string/department"
+            android:textSize="@dimen/fifteen_dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="@dimen/update_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:background="@drawable/update5"
+            android:textSize="@dimen/fifteen_dp" />
+
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="@dimen/delete_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_weight="0.14"
+            android:background="@drawable/delete"
+            android:onClick="deleteContact"
+            android:textSize="@dimen/fifteen_dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
